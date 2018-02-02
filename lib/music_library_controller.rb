@@ -79,7 +79,7 @@ class MusicLibraryController
     # list_songs
     puts "Which song number would you like to play?"
     Song.all.sort_by!(&:name)
-    list_songs
+    # list_songs
     input = gets.chomp
     song_number = input.to_i - 1
     if song_number > 0 && song_number < Song.all.count
