@@ -50,7 +50,7 @@ class MusicLibraryController
   end
 
   def list_songs_by_artist
-    puts "Please enter an artist"
+    puts "Please enter the name of an artist:"
     input = gets.chomp
     Song.all.sort_by!(&:name)
     Song.all.each_with_index do |s, i|
