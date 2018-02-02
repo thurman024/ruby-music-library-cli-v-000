@@ -35,7 +35,8 @@ class MusicLibraryController
   end
 
   def list_songs
-    
+    Song.all.sort_by!(&:name)
+    Song.all.each_with_index {}
   end
 
   def list_artists
